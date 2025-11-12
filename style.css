@@ -93,10 +93,8 @@ nav.desktop{
 .main-photo {
     display: flex;
     align-items: center;
-    margin: 3rem;
-    /*max-width: 100%;
-    border-radius: 8px;*/
-    
+    margin: 3rem;   
+    margin-bottom: unset;
 }
 
 footer {
@@ -116,5 +114,45 @@ footer {
         display: flex;
         justify-content: center;
     }
-    
 }
+
+/*.about-section{
+  display: block;
+  padding: 2rem;
+  margin: 2rem;
+}*/
+.question-group{
+  display: block;
+  padding: 1rem;
+  margin: 1rem;
+  margin-top: 0px;
+
+}
+
+.question input, .question label, .question textarea{
+  width: 100%;
+}
+
+.contact-me h2{
+  display: block;
+  padding: 1rem;
+  margin: 1rem;
+  margin-bottom: 0px ;
+  padding-bottom: 0px;
+}
+
+.about-section {
+  padding: 1rem;
+  margin: 1rem;
+  margin-bottom: 0px ;
+  padding-bottom: 0px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+section form button {
+  margin: .5rem 0rem;
+  background-color: white;
+  border: none;
+} 
+
