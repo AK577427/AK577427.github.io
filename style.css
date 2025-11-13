@@ -4,7 +4,7 @@
   --brand: #94a593;
   --action: #ffa300;
   --white: #ffffff;
-  --base-light: #cdb5df;
+  --base-light: #cbd6ca;
   --base-dark: #0d0711;
   --black: #111111;
 }
@@ -28,7 +28,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Rubik", sans-serif;
+  font-family: "Calibri", sans-serif;
 }
 body,
 h1,
@@ -62,6 +62,8 @@ small {
 
 body{
     background-color: var(--brand);
+    max-width: 800px;
+    margin: auto;
 }
 
 header {
@@ -89,6 +91,10 @@ nav.desktop{
     font-weight: bold;
     border-bottom: 2px;
 }
+main{
+  padding: 1rem;
+  gap: 10px;
+}
 
 .main-photo {
     display: flex;
@@ -103,7 +109,7 @@ section a.cursor :hover{
 footer {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
     margin-top: 2rem;
 }
 
@@ -129,11 +135,14 @@ footer {
   padding: 1rem;
   margin: 1rem;
   margin-top: 0px;
-
 }
 
 .question input, .question label, .question textarea{
   width: 100%;
+}
+
+.question input, .question textarea{
+  background-color: var(--base-light);
 }
 
 .contact-me h2{
@@ -145,17 +154,39 @@ footer {
 }
 
 .about-section {
+  background-color: var(--base-light);
   padding: 1rem;
   margin: 1rem;
   margin-bottom: 0px ;
-  padding-bottom: 0px;
+  padding-bottom: 1rem;
   line-height: 1.5;
   text-align: justify;
 }
 
+.hero {
+    background-color: var(--base-light);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: justify;
+    padding: 1rem;
+    margin: 1rem;
+    margin-bottom: 30px;
+    column-gap: 30px;
+}
+
+.hero img {
+    width: 150px;
+    height: 150px;
+}
+.hero p {
+    font-size: large;
+    padding-left: 1rem;
+}
+
 section form button {
   margin: .5rem 0rem;
-  background-color: white;
+  background-color:var(--base-light);
   border: none;
 } 
 
