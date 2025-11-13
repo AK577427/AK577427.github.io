@@ -96,6 +96,9 @@ nav.desktop{
     margin: 3rem;   
     margin-bottom: unset;
 }
+section a.cursor :hover{
+  filter: contrast(150%);
+}
 
 footer {
     display: flex;
