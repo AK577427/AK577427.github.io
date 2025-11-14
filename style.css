@@ -1,5 +1,5 @@
 /* Base HTML Styles */
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Rubik:ital,wght@0,400;0,700;1,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oranienbaum&display=swap');
 :root {
   --brand: #94a593;
   --action: #ffa300;
@@ -13,7 +13,7 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
-  font-family: "Calibri", sans-serif;
+  font-family: "Lato" , sans-serif;
   color: var(--black);
   scroll-behavior: smooth;
 }
@@ -28,7 +28,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Calibri", sans-serif;
+  font-family: "lato", sans-serif;
 }
 body,
 h1,
@@ -160,10 +160,45 @@ footer {
   margin-bottom: 0px ;
   padding-bottom: 1rem;
   line-height: 1.5;
-  text-align: justify;
+  text-align: left;
+  display: flex;
+  gap: 40px;
 }
 
+.hero  {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    margin-bottom: 30px;
+    column-gap: 30px;
+    text-decoration: none;
+    color: var(--black);
+}
 .hero {
+  background-color: none;
+  margin: 0;
+}
+
+.about-section img , .projects-showcase img {
+    width: 100px;
+    height: 100px;
+}
+.hero p {
+    font-size: x-large;
+    padding-left: 1rem;
+    font-weight: 600;
+}
+
+section form button {
+  margin: .5rem 0rem;
+  background-color:var(--base-light);
+  border: none;
+}
+
+.projects-showcase {
     background-color: var(--base-light);
     display: flex;
     justify-content: left;
@@ -173,20 +208,13 @@ footer {
     margin: 1rem;
     margin-bottom: 30px;
     column-gap: 30px;
+    text-decoration: none;
+    color: var(--black);
+}
+.projects-showcase:hover {
+    background-color: white
 }
 
-.hero img {
-    width: 150px;
-    height: 150px;
+header nav ul a:hover {
+    color: var(--base-light);
 }
-.hero p {
-    font-size: large;
-    padding-left: 1rem;
-}
-
-section form button {
-  margin: .5rem 0rem;
-  background-color:var(--base-light);
-  border: none;
-} 
-
