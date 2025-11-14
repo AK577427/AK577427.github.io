@@ -150,6 +150,7 @@ footer {
   padding: 1rem;
   margin: 1rem;
   margin-bottom: 0px ;
+  padding-top: 0px;
   padding-bottom: 0px;
 }
 
@@ -217,4 +218,20 @@ section form button {
 
 header nav ul a:hover {
     color: var(--base-light);
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 1rem;
+    margin: 1rem;
+    margin-bottom: 0px ;
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+.skills img {
+    width: 60px;
+    height: 60px;
 }
