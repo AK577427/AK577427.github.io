@@ -91,10 +91,10 @@ nav.desktop{
     font-weight: bold;
     border-bottom: 2px;
 }
-main{
+/* main{
   padding: 1rem;
   gap: 10px;
-}
+} */
 
 .main-photo {
     display: flex;
@@ -123,6 +123,11 @@ footer {
         display: flex;
         justify-content: center;
     }
+    /* .about-section  {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 30px;
+    } */
 }
 
 @media (max-width: 767px) {
@@ -174,17 +179,15 @@ footer {
 }
 
 .about-section {
-  background-color: var(--base-light);
+  /* background-color: var(--base-light); */
   padding: 1rem;
-  margin: 1rem;
+  margin: 2rem;
   margin-bottom: 0px ;
   padding-bottom: 1rem;
   line-height: 1.5;
-  text-align: left;
   display: flex;
   gap: 40px;
 }
-
 .hero  {
     display: flex;
     justify-content: left;
@@ -202,13 +205,15 @@ footer {
   margin: 0;
 }
 
-.about-section img , .projects-showcase img {
+.about-section img {
     width: 100px;
-    height: 100px;
+    /* height: 100px; */
+
 }
 .hero p {
     font-size: x-large;
-    padding-left: 1rem;
+    /* padding-left: 1rem; */
+    justify-content: center;
     font-weight: 600;
 }
 
@@ -234,6 +239,13 @@ section form button {
 .projects-showcase:hover {
     background-color: white
 }
+.projects-showcase:focus {
+    outline: 2px solid var(--action);
+}
+.projects-showcase img {
+    width: 100px;
+    height: 100px;
+}
 
 header nav ul a:hover {
     color: var(--base-light);
@@ -243,9 +255,9 @@ header nav ul a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 12.5px;
     padding: 1rem;
-    margin: 1rem;
+    margin: 2rem;
     margin-bottom: 0px ;
     margin-top: 1rem;
     padding-top: 1rem;
