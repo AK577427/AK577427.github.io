@@ -126,6 +126,13 @@ footer {
   .skills {
     margin: 2rem;
   }
+  .about-section img {
+    display: flex;
+    align-self: center;
+    width: 100px;
+    height: 100px;
+}
+  
 }
 
 @media (max-width: 767px) {
@@ -211,9 +218,6 @@ footer {
   margin: 0;
 }
 
-.about-section img {
-    width: 100px;
-}
 
 .hero p {
     font-size: x-large;
