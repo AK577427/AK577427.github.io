@@ -91,10 +91,6 @@ nav.desktop{
     font-weight: bold;
     border-bottom: 2px;
 }
-/* main{
-  padding: 1rem;
-  gap: 10px;
-} */
 
 .main-photo {
     display: flex;
@@ -123,11 +119,13 @@ footer {
         display: flex;
         justify-content: center;
     }
-    /* .about-section  {
-        display: flex;
-        justify-content: space-evenly;
-        gap: 30px;
-    } */
+    .skills-animation img {
+    width: 60px;
+    height: 60px;
+  }
+  .skills {
+    margin: 2rem;
+  }
 }
 
 @media (max-width: 767px) {
@@ -143,7 +141,6 @@ footer {
     .about-section {
         flex-direction: column;
         align-items: center;
-        gap: 0px;
     }
     .projects-showcase {
         flex-direction: column;
@@ -151,6 +148,15 @@ footer {
     }
     .projects-showcase:hover {
     background-color: white
+    }
+    .skills-animation img {
+    width: 40px;
+    height: 40px;
+    }
+    .skills {
+    margin: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
     }
 }
 
@@ -179,14 +185,14 @@ footer {
 }
 
 .about-section {
-  /* background-color: var(--base-light); */
   padding: 1rem;
-  margin: 2rem;
+  margin: 1rem;
   margin-bottom: 0px ;
+  margin-top: 0%;
   padding-bottom: 1rem;
   line-height: 1.5;
   display: flex;
-  gap: 40px;
+  gap: 30px;
 }
 .hero  {
     display: flex;
@@ -207,12 +213,10 @@ footer {
 
 .about-section img {
     width: 100px;
-    /* height: 100px; */
-
 }
+
 .hero p {
     font-size: x-large;
-    /* padding-left: 1rem; */
     justify-content: center;
     font-weight: 600;
 }
@@ -252,17 +256,22 @@ header nav ul a:hover {
 }
 
 .skills {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12.5px;
-    padding: 1rem;
-    margin: 2rem;
-    margin-bottom: 0px ;
-    margin-top: 1rem;
-    padding-top: 1rem;
+    overflow: hidden;
 }
-.skills img {
-    width: 60px;
-    height: 60px;
+
+.skills-animation {
+  display: flex;
+  animation: scrollSkills 8s linear infinite;
+  width: calc(200%);
+  gap: 15px;
 }
+
+@keyframes scrollSkills {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Scroll half because images are duplicated */
+  }
+}
+
